@@ -1,0 +1,266 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: #616971;
+}
+header {
+  height: 101px;
+  box-shadow: 0 2px 3px rgb(0 0 0/10%), 0 2px 2px rgb(0 0 0/7%);
+
+  background-color: #63001957;
+}
+
+.header-container {
+  max-width: 1404px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.options {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+.options a {
+  margin: 0 auto;
+  font-size: 30px;
+  text-decoration: none;
+  color: #9a1032;
+  font-weight: 600;
+}
+
+.logo {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  color: #9a1032;
+  font-size: 50px;
+}
+.logo * {
+  margin: 0 auto;
+}
+.logo img {
+  height: 100px;
+}
+.logo h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+.bhbh {
+  display: contents;
+}
+
+.choice {
+  height: 600px;
+  width: 500px;
+  background-color: #9a1032;
+  margin: 20px;
+
+  border-radius: 100px;
+}
+.pg {
+  height: 100vh;
+  width: 100%;
+}
+.red {
+  background-color: #ac6174;
+}
+
+/*quiz style*/
+
+.quiz {
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  background: #2f3542;
+  color: #dfe4ea;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.quiz h1 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.quiz span,
+.quiz i {
+  color: #47001e;
+  font-size: 4rem;
+}
+
+.quiz h3 {
+  color: #47001e;
+  font-size: 1.9rem;
+}
+
+.quiz .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto 3rem;
+  width: 500px;
+}
+
+.quiz button {
+  flex: 1 0 45%;
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 0.4rem;
+  outline: none;
+  background: #dfe4ea;
+  user-select: none;
+  font-weight: 600;
+}
+.quiz button:hover {
+  background: #a05467;
+  transition: 0.5s;
+}
+.quiz button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+.quiz p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+#progress {
+  font-size: 1.7rem;
+  color: #47001e;
+  font-weight: 700;
+}
+/*end quiz style*/
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.carousel-inner {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 10px;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 1.3s ease;
+}
+
+/*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+.bg-custom {
+  background-color: rgba(114, 18, 18, 0.4);
+  color: white;
+  border-radius: 1rem;
+}
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
+}
+.border-primary {
+  border-top: 0.2rem solid #4981b3 !important;
+}
+.carousel-caption h3 {
+  font-size: 2.2rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.btn-lg {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-width: medium;
+}
+.btn-danger {
+  background-color: #ac2615;
+  border: 0.05rem solid #ac2615;
+}
+.btn-primary {
+  background-color: #3a3a3a;
+  border: 0.05rem solid #636363;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6d1414 !important;
+  border: 0.05rem solid #6d1414 !important;
+}
+
+.quiz {
+  background-color: #9a1032;
+}
+.clubs {
+  background-color: #9a10336b;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
